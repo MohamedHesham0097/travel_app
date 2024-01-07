@@ -3,11 +3,10 @@ import Button from "./Button"
 
 const Hero = () => {
   return (
-    <section className='border-2 border-red-500 max-container padding-container flex flex-col gap-20 py-10 pb-32 
+    <section className='border-2 max-container padding-container flex flex-col gap-20 py-10 pb-32 
                         md:gap-28 lg:py-20 xl:flex-row' >
       <div className='hero-map' />
 
-      {/* {Left Side} */}
       <div className='relative z-20 flex flex-1 flex-col xl:w-1/2 ' >
         <Image src="/camp.svg" alt="camp" width={50} height={50} className="absolute left-[-5px] top-[-30px] lg:w-[50px]" />
         <h1 className="bold-52 lg:bold-88" >Putuk Truno Camp Area</h1>
@@ -43,6 +42,30 @@ const Hero = () => {
               variant="btn_white_text"   
             />
         </div>       
+      </div>
+
+      <div className="relative flex flex-1 items-start" >
+        <div className="relative flex z-20 w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8 " >
+            <div className="flex flex-col" >
+              <div className="flexBetween" >
+                <p className="regular-16 text-gray-20" >Location</p>
+                <Image src="/close.svg" alt="close" width={24} height={24}  />
+              </div>
+              <p className="bold-20 text-white" >Aguas Calientes</p>
+            </div>
+              <div className="flexBetween flex" >
+                <div className="flex flex-col" >
+                  <p className="regular-16 text-gray-20 block" >Distance</p>
+                  <p className="bold-20 text-white" >173.28 mi</p>
+                </div>
+              </div>
+              <div className="flexBetween" >
+                <div className="flex flex-col" >
+                  <p className="regular-16 text-gray-20 block" >Elevation</p>
+                  <p className="bold-20 text-white" >2.040 Km</p>
+                </div>
+              </div>
+        </div>
       </div>
     </section>
   )
